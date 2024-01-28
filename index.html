@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MY Portfolio</title>
+	<style type="text/css">
+
+
+      *{
+      	 margin:0;
+      	 padding:0;
+      }
+      .main{
+
+      	width:100%;
+      	background: url(images/img4.jpg);
+      	background-position: center;
+      	background-size: cover;
+      	height:100vh;
+      	position: relative;
+      	font-family:sans-serif;
+      }
+      .navbar{
+
+      	width: 86%;
+      	display: flex;
+      	margin: auto;
+      	padding:  15px 0;
+      	align-items: center;
+      	justify-content: space-between;
+      }
+
+      .navbar .logo{
+
+      	       width:160px;
+      	       cursor: pointer;
+      	       margin-top:-1%;
+      	       margin-left: -4%;
+
+
+      }
+
+      ul{
+
+      	margin-top: -4%;
+      }
+       ul li{
+
+       	list-style: none;
+       	display : inline-block;
+       	padding: 10px 16px;
+
+
+       }
+
+       ul li a{
+
+       	 font-size: 16px;
+       	 font-weight: bold;
+       	 text-decoration: none;
+       	 color:white;
+       	 margin-top: -6%;
+
+       }
+
+       ul li a:hover{
+
+       	color: orange;
+    
+       }
+
+       .info{
+
+       	margin-left: 7%;
+       	margin-top: 6%;
+       	color:white;
+       }
+
+       .info h1{
+
+              font-size: 65px;
+              color:white;
+
+       }
+
+
+       .info h3{
+
+
+       	      font-size:18px;
+              color:white;
+              letter-spacing:5px;
+              line-height:24px;
+
+
+       }
+       .info span{
+
+
+       	color: orange;
+
+       }
+
+
+    .info a{
+
+
+    	text-decoration: none;
+    	color:#fff;
+    	background:rgba(36,32,30);
+    	margin: 26px 0;
+    	padding :10px 18px;
+    	border-radius: 10px;
+    	display:inline-block;
+    	transition: -4s ease;
+
+    } 
+
+    .info a:hover{
+
+         background: orange;
+    }
+
+    .image{
+
+             width:22%;
+             height: 45%;
+             position:absolute;
+             right: 100px;
+             bottom:0;
+    }
+    .image img{
+
+    	position:absolute;
+    	height:140%;
+    	left:40%;
+    	transform: translate(-55%);
+    	bottom:0;
+    	transition: left 2s ease;
+    }
+
+    .image:hover .img{
+
+
+    	left:55%;
+
+    }
+
+    .about{
+    	padding:80px; 0;
+    	color:white;
+    	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    	grid-gap:40px;
+    	margin-top: 50px;
+
+
+    }
+    .row{
+
+    	display:flex;
+      	background: url(images/img4.jpg);
+      	flex-wrap:flex;
+
+    }
+
+
+.about-col-1{
+
+
+	flex-basis:35%;
+
+	
+}
+
+.about-col-1 img{
+
+	         width:100%;
+	         border-radius:15px;
+             
+
+    }
+
+   .about-col-2{
+
+    	flex-basis:50%;
+    }
+
+  
+
+    .sub-title {
+
+         font-size:60px;
+         color:white;
+         margin-top:24px;
+         font-family:sans-serif;
+
+
+    }
+
+    .container{
+
+    	
+           color:white;
+           font-family:sans-serif;
+            font-size:18px;
+             line-height:24px;
+             letter-spacing:5px;
+
+    }
+
+
+    #services{
+
+
+    	padding: 30px 0;
+    	background: url(images/img4.jpg);
+    }
+
+
+
+    .container h1{
+
+           
+           padding: 20px;
+
+
+    }
+
+
+    .services-list{
+
+    	display:grid;
+    	grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    	grid-gap:40px;
+    	margin-top: 50px;
+    }
+
+
+    .services-list div{
+
+
+        background:#262626;
+    	padding: 40px;
+    	font-size: 18px;
+    	font-weight: 300;
+    	border-right: 10px;
+    	font-family: sans-serif;
+
+   
+    }
+
+ .services-list div:hover{
+
+    
+
+    background:orange;
+
+}
+
+
+ .services-list  div a{
+
+
+
+ 	
+    	text-decoration: none;
+    	color:#fff;
+    	background:rgba(36,32,30);
+    	margin: 26px 0;
+    	padding :10px 18px;
+    	border-radius: 10px;
+    	display:inline-block;
+    	transition: -4s ease;
+}
+
+.services-list  div a:hover{
+     
+     background:gray;
+}
+
+
+/*------------contact--------------*/
+
+.contact-left{
+
+   
+	flex-basis:35%;
+	margin-left:10px;
+
+}
+
+
+
+
+
+.contact-right{
+
+    flex-basis:60%;
+
+}
+
+.contact-left p{
+
+
+	margin-top:30px;
+
+}
+
+.contact-left p i{
+
+        color:white;
+        margin-right:15px;
+        font-size:25px;
+
+}
+  .social-icons{
+
+  	margin-top: 30px;
+
+  }
+
+  .social-icons a{
+
+  	text-decoration : none;
+  	font-size : 30px;
+  	margin-right : 15px;
+  	color:#ababab;
+  	display:  inline-block;
+  	transition: transform 0.5s;
+
+
+  }
+
+  .social-icons a:hover{
+
+
+
+    color:gray;
+
+}
+
+
+ 
+
+.contact-right form{
+
+
+	width: 100%;
+}
+
+form input, form textarea{
+
+
+
+	width:100%;
+	border: 0;
+	outline:none;
+	background:#262626;
+	padding:15px;
+	margin: 15px 0;
+	color:white;
+	font-size:18px;
+	border- radius: 6px;
+
+}
+
+
+
+
+
+
+
+      
+
+
+
+
+   
+
+
+
+
+               
+
+            
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+   
+    <div class="main">
+    	<div class="navbar">
+    		<img src="images/image-2.png" class="logo">
+  
+ 
+    			<ul>
+    				<li><a href="#">Home</a></li>
+    				<li><a href="#">Services</a></li>
+    				<li><a href="#">About</a></li>
+    				<li><a href="#">Contact</a></li>
+
+</ul>
+</div>
+        <div class="info">
+        	<h3>Hi,I'm <span>Dreniaa</span></h3>
+        	<h1><span>W</span>EB<span> D</span>ESIGNER</h1>
+        	<h3>Web designer and developer from USA.
+        		I Create <br>websites to do business better <br> online.</h3>
+        		<a href="#">Hire Me</a>
+</div>
+
+        <div class="image">
+        	<img src="images/image-5.jpg" class="img">
+</div>
+</div>
+         <div id="about">
+         	<div class="row">
+         		<div class="about-col-1"> 
+
+                 <img src="images/image-5.jpg">
+         		</div>
+         		<div class="about-col-2"> 
+                 <h1 class="sub-title">About Me</h1>
+                 <p class="container"> web designer due to extensive history in graphic and web design. Her dedication to continuously learning about new web design trends and concepts has made him a valuable member of the team. With eight years of experience and a master's in web design, her expertise can help customers modernize with websites and appeal to expanding customer populations.</p>
+
+            </div>
+        </div>
+    </div>
+
+<!--------------services----------------->
+<div id="services">
+
+	<div class="container">
+
+		<h1 class="sub-title">My Services</h1>
+
+		<div class="services-list">
+
+			<div>  
+              <h2>Web design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a href="#">Learn More</a>
+
+			</div>
+           
+
+           	<div>  
+              <h2>Web Developer</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a href="#">Learn More</a>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!==============contact------------>
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left"> 
+
+                 <h1 class="sub-title">Contact Me</h1>
+                 <p><i class="fas fa-papet-plane"></i>dreniaa!@gmail.com</p>
+                 <p><i class="fas fa-phone-square-alt"></i>03345677111</p>
+
+                 <div class="social-icons"></div>
+                 <a href="https://facebook.com/"><i class="fab fa-facebook"></i>
+                 <a href=""><i class="fab fa-twitter-square"></i>
+                 <a href=""><i class="fab fa-instagram"></i>
+                 <a href=""><i class="fab fa-linkedin"></i>
+
+				</div>
+				<div class="contact-right"> 
+                
+                <form>
+                	<input type="text" name="Name" placeholder="Your Name" required>
+                	<input type="email" email="Email"placeholder="Your Email" required>
+                	<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                	<button type="submit" class="btn btn2"></button>
+       
+
+
+
+				</div>
+
+
+</form>
+</div>
+</a>
+</a>
+</a>
+</a>
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
